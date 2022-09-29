@@ -6,9 +6,42 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src='main.js' defer></script>
 </head>
+
+
 <body>
-    <p>This is a template</p>    
-    <script src='main.js'></script>
+    <section>
+    <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-3">
+            <h3>A kép URL-je</h3>
+            <input type="text" id="urlbemenet">
+          </div>
+          <div class="col-md-3">
+            <h3>A kép szélessége (pixelben megadva)</h3>
+            <input type="number" id="szeles">
+          </div>
+          <div class="col-md-3">
+            <h3>A képkeret vastagsága</h3>        
+            <input type="number" id="vastag">
+          </div>
+          <div class="col-md-3">
+            <h3>A képkeret színe</h3>        
+            <input type="color" id="szin">
+          </div>
+        </div>
+    </div>
+    <img src="../src/cica.jpeg" id="kephelye">
+    </section>
+    <section>
+        <p>Szabó Bence, 14/S  <button id="gomb">Sötét</button></p>
+    </section>
+
+    
+        
+    
 </body>
 </html>
